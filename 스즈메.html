@@ -2,47 +2,83 @@
 <html>
     <head>
         <style>
-            body{background-color:rgb(138, 138, 155);}
-            #intro{float:left;
+            
+            html, body{width: 100%; height: 100%; color:white;}
+            html{padding-top: 20px;
+                background-color: rgba(1, 1, 52, 0.918);}
+        .bar{letter-spacing: 40px;
+            border-top : 1px solid white;
+            border-bottom : 1px solid white;
+            padding-top: 20px; padding-bottom: 20px;
+            color: white;}
+        .bar li{display: inline;
+            letter-spacing: 10px;}
+        .bar a{text-decoration: none; color: white;}
+        #intro{float:left;
                 width:300px;
                 height:400px;
                 margin:50px;
                 margin-top:0px;
                 margin-bottom:0px;
                 }
-            .genre li{letter-spacing:3px;
-                list-style-type:none;
-                display:inline;}
-            #star{width:400px;
+        
+        #star{float:left;
+                width:400px;
                 height:80px;}
+        #content{float:left;
+        text-align:left;
+        margin-left:0;}
+        .genre{clear:both;
+        }        
+    .genre li{
+        letter-spacing:3px;
+            list-style-type:none;
+            display:inline;
+            padding:20px;}
+    #ott{float:left;}
+    span{font-size:20pt;}
         </style>
     </head>
     <body>
         <ul class="bar">
-            <li><h1>정강이들</h1></li> <!--이 부분은 다른 것보다 글씨 크게 해주세요-->
-            <li>홈</li>
-            <li>신작</li>
-            <li>인기</li>
-            <li>로맨스</li>
-            <li>액션</li>
-            <li>판타지</li>
-            <li>애니 입문</li>
+                <li id="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li>
+                <a href="home.html"><li>홈</li></a>
+                <a href="new.html"><li>신작</li></a>
+                <a href="popu.html"><li>인기</li></a>
+                <a href="romance.html"><li>로맨스</li></a>
+                <a href="action.html"><li>액션</li></a>
+                <a href="fantasy.html"><li>판타지</li></a>
+                <a href="immun.html"><li>애니입문</li></a>
+            </ul>
         </ul>
         <br>
         <h1>스즈메의 문단속</h1>
         <p> 영화 2023 122분 - 12세 관람가</p>
         <img id="intro" src="스즈메.jpg">
+        <img id="star" src="스즈메_별점.png">
+        <pre id="content">
+
+
+
+“이 근처에 폐허 없니? 문을 찾고 있어” 규슈의 한적한 마을에 살고 있는 소녀
+‘스즈메’는 문을 찾아 여행 중인 청년 ‘소타’를 만난다. 그의 뒤를 쫓아 산속 폐허에서 
+발견한 낡은 문. ‘스즈메’가 무언가에 이끌리듯 문을 열자 마을에 재난의 위기가 닥쳐오
+고 가문 대대로 문 너머의 재난을 봉인하는 ‘소타’를 도와 간신히 문을 닫는다. “닫아야
+만 하잖아요, 여기를!” 재난을 막았다는 안도감도 잠시, 수수께끼의 고양이 ‘다이진’이 
+나타나 ‘소타’를 의자로 바꿔 버리고 일본 각지의 폐허에 재난을 부르는 문이 열리기 시
+작하자 ‘스즈메’는 의자가 된 ‘소타’와 함께 재난을 막기 위한 여정에 나선다. “꿈이 아
+니었어” 규슈, 시코쿠, 고베, 도쿄 재난을 막기 위해 일본 전역을 돌며 필사적으로 문을 
+닫아가던 중 어릴 적 고향에 닿은 ‘스즈메’는 잊고 있던 진실과 마주하게 되는데…
+
+<span>OTT</span>
+
+아직 제공되지 않습니다
+</pre>
+       <br>
         <ul class="genre">
             <li>판타지</li>
             <li>모험</li>
             <li>애니메이션</li>
         </ul>
-        <img id="star" src="스즈메_별점.png">
-        <p id="content">“이 근처에 폐허 없니? 문을 찾고 있어” 규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는 문을 찾아 여행 중인 청년 ‘소타’를 만난다. 그의 뒤를 쫓아 산속 폐허에서 발견한 낡은 문. ‘스즈메’가 무언가에 이끌리듯 문을 열자 마을에 재난의 위기가 닥쳐오고
-             가문 대대로 문 너머의 재난을 봉인하는 ‘소타’를 도와 간신히 문을 닫는다. “닫아야만 하잖아요, 여기를!” 재난을 막았다는 안도감도 잠시, 수수께끼의 고양이 ‘다이진’이 나타나 ‘소타’를 의자로 바꿔 버리고 일본 각지의 폐허에 재난을 부르는 문이 열리기 시작하자 ‘스즈메’는 의자가 된 ‘소타’와 함께 재난을 막기 
-             위한 여정에 나선다. “꿈이 아니었어” 규슈, 시코쿠, 고베, 도쿄 재난을 막기 위해 일본 전역을 돌며 필사적으로
-              문을 닫아가던 중 어릴 적 고향에 닿은 ‘스즈메’는 잊고 있던 진실과 마주하게 되는데…</p>
-        <p id="ott">OTT</p>
-        <p>아직 제공되지 않습니다</p>
     </body>
 </html>
