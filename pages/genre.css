@@ -1,0 +1,18 @@
+/*각 장르 소개 페이지들의 css 파일*/
+
+body {background-color: #151B3C;} /*main, 스즈메와 다른 배경색. figma의 배경색을 기준으로 함.*/
+
+ul {letter-spacing: 40px;}
+li {display: inline; letter-spacing: 10px; color: white; font-size: 18px;} 
+li.big {font-size: 30px; }
+
+a {text-decoration-line: none; color: white;}
+a:hover {font-weight: bold;} 
+
+h1 {padding-left: 40px; font-size: 40px; font-weight: bold; color: white; padding-right: 40px; float: left;}
+button { background-color: #151B3C; border: none; color: white; margin-top: 60px; font-size: 18px;}
+
+table {position: absolute; visibility: hidden; top: 132px; left: 230px;} /*테이블 위치는 절대 위치로 설정함. 더 좋은 방법 있으면 바꿀 것*/
+
+section {clear: both; padding: 40px; text-align: center;}
+img {width: 300px; height: 450px; padding: 20px;}
