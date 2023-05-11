@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "genre.css">
+        <style>
+        table {position: absolute; visibility: hidden; top: 132px; left: 270px;}
+        </style>
+    </head>
+    <body>
+        <body>
+            <header>
+                <ul class="bar"> 
+                    <li class="big">정강이들</li>
+                    <a href="main.html"><li>홈</li></a> 
+                    <a href="new.html"><li>신작</li></a> 
+                    <a href="popu.html"><li>인기</li></a>
+                    <a href="romance.html"><li>로맨스</li></a>
+                    <a href="action.html"><li>액션</li></a>
+                    <a href="fantasy.html"><li>판타지</li></a>
+                    <a href="immun.html"><li>애니입문</li></a>
+                </ul>
+            </header>
+    
+            <nav>
+                <h1>판타지</h1>
+                <button onclick = "menu_switch()">장르></button>
+    
+                <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
+                    <tr> <td><a href="new.html">신작</a></td> </tr>
+                    <tr> <td><a href="popu.html">인기</a></td> </tr>
+                    <tr> <td><a href="romance.html">로맨스</a></td> </tr>
+                    <tr> <td><a href="action.html">액션</a></td> </tr>
+                    <tr> <td><a href="fantasy.html">판타지</a></td> </tr>
+                    <tr> <td><a href="immun.html">애니 입문</a></td> </tr>
+                </table>
+    
+                <!--장르> 클릭시 발생하는 스크립트. 클릭시 table의 visibility를 hidden이나 inherit으로 바꿈-->
+                <script>
+                    function menu_switch() {
+                        const menu_table = document.getElementById('menu_table');
+                        if (menu_table.style.visibility == 'hidden') {
+                            menu_table.style.visibility = 'inherit';
+                        }
+                        else {
+                            menu_table.style.visibility = 'hidden';
+                        }
+                    }
+                </script>
+            </nav>
+    
+            <section> 
+                <img src = "../assets/fantasy/도쿄구울.png" alt = "1">
+                <img src = "../assets/fantasy/미래일기.png" alt = "2">
+                <img src = "../assets/fantasy/소아온.png" alt = "3">
+                <img src = "../assets/fantasy/빨강머리백설공주.png" alt = "4">
+                <br>
+                <img src = "../assets/fantasy/슈가슈가룬.png" alt = "5">
+                <img src = "../assets/fantasy/약속의네버랜드.png" alt = "6">
+                <img src = "../assets/fantasy/이멋축.png" alt = "7">
+                <img src = "../assets/fantasy/주술회전.png" alt = "8">
+                <br>
+                <img src = "../assets/fantasy/혈계전선.png" alt = "9">
+                <img src = "../assets/fantasy/히로아카.png" alt = "10">
+            </section>
+    
+        </body>
+    </html>
+    </body>
+</html>
