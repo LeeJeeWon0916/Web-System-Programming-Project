@@ -1,31 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body { background-color: #151B3C;} /*main, 스즈메와 다른 배경색. figma의 배경색을 기준으로 함.*/
-
-            ul{letter-spacing: 40px;
-                border-top : 1px solid white;
-                border-bottom : 1px solid white;
-                padding-top: 20px; padding-bottom: 20px;
-                color: white;}
-            li.big{font-size:30px;}
-            li{display: inline;
-                letter-spacing: 10px;
-                font-size:18px;}
-            
-            
-            a {text-decoration-line: none; color: white;}
-            a:hover {font-weight: bold;} 
-            
-
-            h1 {padding-left: 40px; font-size: 40px; font-weight: bold; color: white;}
-
-            section {padding: 40px; text-align: center;}
-            img {width: 300px; height: 450px; padding: 20px;}
-        </style>
+        <link rel = "stylesheet" href = "genre.css">
     </head>
-
+    
     <body>
         <header>
             <ul class="bar"> 
@@ -42,19 +20,43 @@
 
         <nav>
             <h1>인기</h1>
+
+            <button onclick = "menu_switch()">장르></button>
+
+            <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
+                <tr> <td><a href="new.html">신작</a></td> </tr>
+                <tr> <td><a href="popu.html">인기</a></td> </tr>
+                <tr> <td><a href="romance.html">로맨스</a></td> </tr>
+                <tr> <td><a href="action.html">액션</a></td> </tr>
+                <tr> <td><a href="fantasy.html">판타지</a></td> </tr>
+                <tr> <td><a href="immun.html">애니 입문</a></td> </tr>
+            </table>
+
+            <!--장르> 클릭시 발생하는 스크립트. 클릭시 table의 visibility를 hidden이나 inherit으로 바꿈-->
+            <script>
+                function menu_switch() {
+                    const menu_table = document.getElementById('menu_table');
+                    if (menu_table.style.visibility == 'hidden') {
+                        menu_table.style.visibility = 'inherit';
+                    }
+                    else {
+                        menu_table.style.visibility = 'hidden';
+                    }
+                }
+            </script>
         </nav>
 
         <section> 
             <img src = "../assets/popular/귀멸의칼날.jpeg" alt = "1">
             <img src = "../assets/popular/내 마음의 위험한 녀석.jpg" alt = "2">
             <img src = "../assets/popular/내 옆에 은하.jpeg" alt = "3">
-            <br>
             <img src = "../assets/popular/야마다 군과 Lv999의 사랑을 하다.jpg" alt = "4">
+            <br>
             <img src = "../assets/popular/원피스.jpg" alt = "5">
             <img src = "../assets/popular/이 세계 소환은 두 번째 입니다.jpg" alt = "6">
-            <br>
             <img src = "../assets/popular/지옥락.jpg" alt = "7">
             <img src = "../assets/popular/닥터스톤 뉴월드.webp" alt = "8">
+            <br>
             <img src = "../assets/popular/마슐.webp" alt = "9">
         </section>
 
