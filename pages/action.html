@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "genre.css">
+    </head>
+    <body>
+        <body>
+            <header>
+                <ul class="bar"> 
+                    <li class="big">정강이들</li>
+                    <a href="main.html"><li>홈</li></a> 
+                    <a href="new.html"><li>신작</li></a> 
+                    <a href="popu.html"><li>인기</li></a>
+                    <a href="romance.html"><li>로맨스</li></a>
+                    <a href="action.html"><li>액션</li></a>
+                    <a href="fantasy.html"><li>판타지</li></a>
+                    <a href="immun.html"><li>애니입문</li></a>
+                </ul>
+            </header>
+    
+            <nav>
+                <h1>액션</h1>
+                <button onclick = "menu_switch()">장르></button>
+    
+                <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
+                    <tr> <td><a href="new.html">신작</a></td> </tr>
+                    <tr> <td><a href="popu.html">인기</a></td> </tr>
+                    <tr> <td><a href="romance.html">로맨스</a></td> </tr>
+                    <tr> <td><a href="action.html">액션</a></td> </tr>
+                    <tr> <td><a href="fantasy.html">판타지</a></td> </tr>
+                    <tr> <td><a href="immun.html">애니 입문</a></td> </tr>
+                </table>
+    
+                <!--장르> 클릭시 발생하는 스크립트. 클릭시 table의 visibility를 hidden이나 inherit으로 바꿈-->
+                <script>
+                    function menu_switch() {
+                        const menu_table = document.getElementById('menu_table');
+                        if (menu_table.style.visibility == 'hidden') {
+                            menu_table.style.visibility = 'inherit';
+                        }
+                        else {
+                            menu_table.style.visibility = 'hidden';
+                        }
+                    }
+                </script>
+            </nav>
+    
+            <section> 
+                <img src = "../assets/action/공의경계.webp" alt = "1">
+                <img src = "../assets/action/귀멸읠칼날.webp" alt = "2">
+                <img src = "../assets/action/길티크라운.webp" alt = "3">
+                <img src = "../assets/action/블랙클로버.jpg" alt = "4">
+                <br>
+                <img src = "../assets/action/스파이패밀리.webp" alt = "5">
+                <img src = "../assets/action/이누야샤.jpeg" alt = "6">
+                <img src = "../assets/action/일곱개의대죄.webp" alt = "7">
+                <img src = "../assets/action/헌터x헌터.webp" alt = "8">
+                <br>
+                <img src = "../assets/action/지옥락.webp" alt = "9">
+                <img src = "../assets/action/진격의거인.jpeg" alt = "10">
+            </section>
+    
+        </body>
+    </html>
+    </body>
+</html>
