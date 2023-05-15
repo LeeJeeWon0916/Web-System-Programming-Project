@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-<<<<<<< HEAD
         <link rel = "stylesheet" href = "genre.css">
         <style>
+            /*이미지들 위치 선정하는 코드*/
             #sec{position: absolute;}
             #img1{position: absolute;
             left: 25px;
-            top: 210px;}
+            top: 280px;}
             #img2{position: absolute;
             left: 365px;
-            top: 210px;}
+            top: 280px;}
             #img3{position: absolute;
             left: 705px;
-            top: 210px;}
+            top: 280px;}
             #img4{position: absolute;
             left: 1045px;
-            top: 210px;}
+            top: 280px;}
             #img5{position: absolute;
             left: 25px;
-            top: 720px;}
+            top: 790px;}
             #img6{position: absolute;
             left: 365px;
-            top: 720px;}
+            top: 790px;}
             #img7{position: absolute;
             left: 705px;
-            top: 720px;}
+            top: 790px;}
             #img8{position: absolute;
             left: 1045px;
-            top: 720px;}
-=======
-        <style>
+            top: 790px;}
+            #img9{position:absolute;
+            left: 25px;
+            top: 1300px;}
+            #img10{position:absolute;
+            left: 365px;
+            top: 1300px;}
+            #img11{position:absolute;
+            left: 705px;
+            top: 1300px;}
+            #img12{position:absolute;
+            left: 1045px;
+            top: 1300px;}
+
+            /*배경색,위에 배너 스타일 지정 코드*/
             body { background-color: #151B3C;} /*main, 스즈메와 다른 배경색. figma의 배경색을 기준으로 함.*/
 
             ul {letter-spacing: 40px;}
@@ -43,7 +55,36 @@
 
             section {padding: 40px; text-align: center;}
             img {width: 300px; height: 450px; padding: 20px;}
->>>>>>> 08efe98dd8ef30e594ad09c36c58c13a47343822
+            
+            /*장르 선택하는 것 만들기 위해 적은 코드*/
+            div{
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                height: 85%;}
+            #poppop{
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                height: 58%;}
+            #pop1{display: inline;
+                padding-right:40px;}
+            #pop2{display: inline;
+                padding-right:30px;}
+            #pop3{display: inline;
+                float: right;}
+            #poptit{
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                height: 8%;
+                font-weight: bold;
+                font-size: 20pt;
+                color: white;}
+            #new1{display: inline;
+                float:left;}
+            #new2{display: inline;
+                float: right;}
         </style>
     </head>
 
@@ -63,6 +104,30 @@
 
         <nav id="nav">
             <h1>신작</h1>
+            <button onclick = "menu_switch()">장르></button>
+    
+            <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
+                <tr> <td><a href="new.html">신작</a></td> </tr>
+                <tr> <td><a href="popu.html">인기</a></td> </tr>
+                <tr> <td><a href="romance.html">로맨스</a></td> </tr>
+                <tr> <td><a href="action.html">액션</a></td> </tr>
+                <tr> <td><a href="fantasy.html">판타지</a></td> </tr>
+                <tr> <td><a href="immun.html">애니 입문</a></td> </tr>
+            </table>
+    
+            <!--장르> 클릭시 발생하는 스크립트. 클릭시 table의 visibility를 hidden이나 inherit으로 바꿈-->
+            <script>
+                function menu_switch() {
+                    const menu_table = document.getElementById('menu_table');
+                    if (menu_table.style.visibility == 'hidden') {
+                        menu_table.style.visibility = 'inherit';
+                        }
+                    else {
+                        menu_table.style.visibility = 'hidden';
+                        }
+                    }
+                </script>
+            </nav>
         </nav>
 
         <section id="sec"></section>
