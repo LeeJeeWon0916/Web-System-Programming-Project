@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>정강이들/애니입문</title>
+        <link rel = "stylesheet" href = "genre.css">
+        <style>
+            /*이미지들 위치 선정하는 코드*/
+            #sec{position: absolute;}
+            #img1{position: absolute;
+            left: 25px;
+            top: 280px;}
+            #img2{position: absolute;
+            left: 365px;
+            top: 280px;}
+            #img3{position: absolute;
+            left: 705px;
+            top: 280px;}
+            #img4{position: absolute;
+            left: 1045px;
+            top: 280px;}
+            #img5{position: absolute;
+            left: 25px;
+            top: 790px;}
+            #img6{position: absolute;
+            left: 365px;
+            top: 790px;}
+            #img7{position: absolute;
+            left: 705px;
+            top: 790px;}
+            #img8{position: absolute;
+            left: 1045px;
+            top: 790px;}
+            #img9{position:absolute;
+            left: 25px;
+            top: 1300px;}
+            #img10{position:absolute;
+            left: 365px;
+            top: 1300px;}
+            #img11{position:absolute;
+            left: 705px;
+            top: 1300px;}
+            #img12{position:absolute;
+            left: 1045px;
+            top: 1300px;}
+
+            /*배경색,위에 배너 스타일 지정 코드*/
+            body { background-color: #151B3C;} /*main, 스즈메와 다른 배경색. figma의 배경색을 기준으로 함.*/
+
+            ul {letter-spacing: 40px;}
+            li {display: inline; letter-spacing: 10px; color: white; font-size: 18px;} 
+            li.big {font-size: 30px; }
+            a {text-decoration-line: none;}
+            a:hover { font-weight: bold;} 
+
+            h1 {padding-left: 40px; font-size: 40px; font-weight: bold; color: white;}
+
+            section {padding: 40px; text-align: center;}
+            img {width: 300px; height: 450px; padding: 20px;}
+            
+            /*장르 선택하는 것 만들기 위해 적은 코드*/
+            div{
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                height: 85%;}
+            #poppop{
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                height: 58%;}
+            #pop1{display: inline;
+                padding-right:40px;}
+            #pop2{display: inline;
+                padding-right:30px;}
+            #pop3{display: inline;
+                float: right;}
+            #poptit{
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                height: 8%;
+                font-weight: bold;
+                font-size: 20pt;
+                color: white;}
+            #new1{display: inline;
+                float:left;}
+            #new2{display: inline;
+                float: right;}
+        </style>
+    </head>
+
+    <body>
+ <header>
+            <ul class="bar"> 
+                <li class="big">정강이들</li>
+                <a href="main.html"><li>홈</li></a> <!--연결되는 링크 이름들 구분하기 쉽게 앞에 menu_ 붙임-->
+                <a href="new.html"><li>신작</li></a> 
+                <a href="popu.html"><li>인기</li></a>
+                <a href="romance.html"><li>로맨스</li></a>
+                <a href="action.html"><li>액션</li></a>
+                <a href="fantasy.html"><li>판타지</li></a>
+                <a href="immun.html"><li>애니입문</li></a>
+            </ul>
+        </header>
+
+        <nav id="nav">
+            <h1>애니 입문</h1>
+            <button onclick = "menu_switch()">장르></button>
+    
+            <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
+                <tr> <td><a href="new.html">신작</a></td> </tr>
+                <tr> <td><a href="popu.html">인기</a></td> </tr>
+                <tr> <td><a href="romance.html">로맨스</a></td> </tr>
+                <tr> <td><a href="action.html">액션</a></td> </tr>
+                <tr> <td><a href="fantasy.html">판타지</a></td> </tr>
+                <tr> <td><a href="immun.html">애니 입문</a></td> </tr>
+            </table>
+    
+            <!--장르> 클릭시 발생하는 스크립트. 클릭시 table의 visibility를 hidden이나 inherit으로 바꿈-->
+            <script>
+                function menu_switch() {
+                    const menu_table = document.getElementById('menu_table');
+                    if (menu_table.style.visibility == 'hidden') {
+                        menu_table.style.visibility = 'inherit';
+                        }
+                    else {
+                        menu_table.style.visibility = 'hidden';
+                        }
+                    }
+                </script>
+            </nav>
+        </nav>
+
+        <section id="sec"></section>
+                <img id="img1" src = "../assets/immun/doraemong.jpg" alt = "1">
+                <img id="img2" src = "../assets/immun/howlsmovingcastle.jpg" alt = "2">
+                <img id="img3" src = "../assets/immun/kikideliever.jpg" alt = "3">
+                <img id="img4" src = "../assets/immun/myneighbortotoro.jpg" alt = "4">
+                <br>
+                <img id="img5" src = "../assets/immun/onepiece.jpg" alt = "5">
+                <img id="img6" src = "../assets/immun/porcoroso.jpg" alt = "6">
+                <img id="img7" src = "../assets/immun/pompoco.jpg" alt = "7">
+                <img id="img8" src = "../assets/immun/spiritedaway.jpg" alt = "8">
+        </section>
+
+    </body>
+</html>
