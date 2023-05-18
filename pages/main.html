@@ -4,17 +4,15 @@
     <title>정강이들</title>
     <style>
         html, body{width: 100%; height: 100%;}
-        html{padding-top: 20px;
-            background-color: rgba(1, 1, 52, 0.918);}
+        html{background-color: rgb(3, 1, 39);}
+
         ul{letter-spacing: 40px;
                 border-top : 1px solid white;
                 border-bottom : 1px solid white;
-                padding-top: 20px; padding-bottom: 20px;
-                color: white;}
+                padding-top: 20px; padding-bottom: 20px; color: white;
+        }
         li.big{font-size:30px;}
-        li{display: inline;
-                letter-spacing: 10px;
-                font-size:18px;}
+        li{display: inline; letter-spacing: 10px; font-size:18px;}
         a {text-decoration-line: none; color: white;}
         a:hover {font-weight: bold;} 
             
@@ -46,6 +44,34 @@
             float:left;}
         #new2{display: inline;
             float: right;}
+        .slideshow-container {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            }
+        .slideshow-container {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            }
+
+        .slide.active {
+            opacity: 1;
+            }
+        #slideimage{ position: absolute;
+        left: 210px;}
     </style>
 </head>
 
@@ -53,16 +79,27 @@
     <ul class="bar">
         <li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li>
         <a href="main.html"><li>홈</li></a>
-        <a href="new.html"><li>신작</li></a>
-        <a href="popu.html"><li>인기</li></a>
         <a href="romance.html"><li>로맨스</li></a>
-        <a href="action.html"><li>액션</li></a>
         <a href="fantasy.html"><li>판타지</li></a>
+        <a href="action.html"><li>액션</li></a>
+        <a href="crime.html"><li>범죄</li></a>
+        <a href="sports.html"><li>스포츠</li></a>
+        <a href="noir.html"><li>느와르</li></a>
         <a href="immun.html"><li>애니입문</li></a>
     </ul>
     <br>
-    <p></p><br>
-    <div><a href="귀멸의칼날.html"><img src="../assets/main/귀칼납작.png" width="1000px"; height="600px;" ></a></div>
+    <div id="poptit"><h3>후끈후끈 인기작, 지금 당장 즐겨보세요!</h3></div>
+    <div class="slideshow-container">
+        <div class="slide active">
+           <a href="introduce/귀멸의칼날.html"><img id="slideimage" src="C:\Users\edail\OneDrive\바탕 화면\깃허브\assets\main\귀칼납작.png" width="1000px"; height="600px" alt="Image 1"></a>
+        </div>
+        <div class="slide">
+           <a href="introduce/이세계삼촌.html"><img id="slideimage" src="C:\Users\edail\OneDrive\바탕 화면\깃허브\assets\main\이세계삼촌납작.png" width="1000px"; height="600px" alt="Image 2"></a>
+        </div>
+        <div class="slide">
+           <a href="introduce/최애의아이.html"><img id="slideimage" src="C:\Users\edail\OneDrive\바탕 화면\깃허브\assets\main\최애의아이납작.png" width="1000px"; height="600px" alt="Image 3"></a>
+        </div>
+    </div>
     <br>
     <div id="poptit"><h3>요즘 유행하는 애니</h3></div>
     <div id="poppop">
@@ -76,6 +113,26 @@
         <a id="new1" href="최애의아이.html"><img src="../assets/main/최애의아이.png"  height="280px"></a>
         <a id="new2" href="이멋폭.html"><img src="../assets/main/이멋폭.png" height="280px"></a>
     </div>
+    
+      <script>
+        function startSlideshow() {
+          const slides = document.querySelectorAll('.slide');
+          let currentSlide = 0;
+    
+          setInterval(() => {
+            // 현재 슬라이드 비활성화
+            slides[currentSlide].classList.remove('active');
+    
+            // 다음 슬라이드로 이동
+            currentSlide = (currentSlide + 1) % slides.length;
+    
+            // 다음 슬라이드 활성화
+            slides[currentSlide].classList.add('active');
+          }, 3000); // 3초마다 슬라이드 전환
+        }
+    
+        startSlideshow();
+      </script>
 </body>
 
 </html>
