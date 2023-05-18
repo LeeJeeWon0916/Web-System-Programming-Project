@@ -24,14 +24,16 @@ float:left;
     margin-bottom:0px;
     }
 
-#star{position:absolute;
-top: 250px;
-left: 500px;
-float:left;
-    width:400px;
-    height:80px;}
+
+#info{
+    position:absolute;
+    top:250px;
+    left: 500px;
+    border-left:2px solid white;
+    padding-left:5px;
+}
 #content{position:absolute;
-top: 330px;
+top: 380px;
 left: 500px;
 float:left;
 text-align:left;
