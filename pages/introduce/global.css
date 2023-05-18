@@ -13,8 +13,8 @@ ul{letter-spacing: 40px;
     border-bottom : 1px solid white;
     padding-top: 20px; padding-bottom: 20px; color: white;
 }
-li.big{font-size:30px;}
-li{display: inline; letter-spacing: 10px; font-size:18px;}
+li.big{font-size:40px;}
+li{display: inline; letter-spacing: 10px; font-size:22px; }
 a {text-decoration-line: none; color: white;}
 a:hover {font-weight: bold;} 
 
