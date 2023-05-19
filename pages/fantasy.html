@@ -2,34 +2,8 @@
 <html>
     <head>
         <link rel = "stylesheet" href = "genre.css">
-        <style>
-        table {position: absolute; visibility: hidden; top: 132px; left: 270px;}
-            #sec{position: absolute;}
-            #img1{position: absolute;
-            left: 25px;
-            top: 210px;}
-            #img2{position: absolute;
-            left: 365px;
-            top: 210px;}
-            #img3{position: absolute;
-            left: 705px;
-            top: 210px;}
-            #img4{position: absolute;
-            left: 1045px;
-            top: 210px;}
-            #img5{position: absolute;
-            left: 25px;
-            top: 720px;}
-            #img6{position: absolute;
-            left: 365px;
-            top: 720px;}
-            #img7{position: absolute;
-            left: 705px;
-            top: 720px;}
-            #img8{position: absolute;
-            left: 1045px;
-            top: 720px;}
-        </style>
+        <link rel = "stylesheet" href = "imagepos.css">
+        <script src= "genre_switch.js"></script>
     </head>
     <body>
         <body>
@@ -59,18 +33,7 @@
                     <tr> <td><a href="immun.html">애니 입문</a></td> </tr>
                 </table>
     
-                <!--장르> 클릭시 발생하는 스크립트. 클릭시 table의 visibility를 hidden이나 inherit으로 바꿈-->
-                <script>
-                    function menu_switch() {
-                        const menu_table = document.getElementById('menu_table');
-                        if (menu_table.style.visibility == 'hidden') {
-                            menu_table.style.visibility = 'inherit';
-                        }
-                        else {
-                            menu_table.style.visibility = 'hidden';
-                        }
-                    }
-                </script>
+                
             </nav>
     
             <section> 
