@@ -1,0 +1,38 @@
+/* 이미지 위치 설정*/
+#sec{position: absolute;}
+#img1{position: absolute;
+left: 25px;
+top: 350px;}
+#img2{position: absolute;
+left: 365px;
+top: 350px;}
+#img3{position: absolute;
+left: 705px;
+top: 350px;}
+#img4{position: absolute;
+left: 1045px;
+top: 350px;}
+#img5{position: absolute;
+left: 25px;
+top: 860px;}
+#img6{position: absolute;
+left: 365px;
+top: 860px;}
+#img7{position: absolute;
+left: 705px;
+top: 860px;}
+#img8{position: absolute;
+left: 1045px;
+top: 860px;}
+#img9{position:absolute;
+left: 25px;
+top: 1370px;}
+#img10{position:absolute;
+left: 365px;
+top: 1370px;}
+#img11{position:absolute;
+left: 705px;
+top: 1370px;}
+#img12{position:absolute;
+left: 1045px;
+top: 1370px;} 
