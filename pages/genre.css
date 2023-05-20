@@ -31,4 +31,5 @@ img:hover{border:1px solid white;
     }
 table {position: absolute; visibility: hidden; top: 132px; left: 270px;}
 
-            
+button:hover{font-weight:bold;}
+         
