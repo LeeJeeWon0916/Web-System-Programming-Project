@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #image-container2 {
+      width: 60%;
+      height: 400px;
+      overflow: hidden; /* 스크롤바 숨김 */
+      white-space: nowrap;
+    }
+
+    .image {
+      display: inline-block;
+      width: 300px;
+      height: 400px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="image-container2">
+    <div id="scroll-container">
+      <img class="image" src="../assets/main/스즈메.jpg">
+      <img class="image" src="../assets/main/이멋폭.png">
+      <img class="image" src="../assets/main/슬램덩크.jpg">
+      <img class="image" src="../assets/main/짱구.png">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+  <button onclick="scrollToNextImage()">다음 이미지</button>
+  <button onclick="scrollToBeforeImage()">이전 이미지</button>
+
+  <script>
+    var container = document.getElementById('image-container2');
+    var scrollContainer = document.getElementById('scroll-container');
+    var images = scrollContainer.getElementsByClassName('image');
+    var currentIndex = 0;
+
+    function scrollToNextImage() {
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        var nextImage = images[currentIndex];
+        var scrollPosition = nextImage.offsetLeft - container.offsetLeft;
+        scrollContainer.style.transform = 'translateX(-' + scrollPosition + 'px)';
+      }
+    }
+
+    function scrollToBeforeImage() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        var prevImage = images[currentIndex];
+        var scrollPosition = prevImage.offsetLeft - container.offsetLeft;
+        scrollContainer.style.transform = 'translateX(-' + scrollPosition + 'px)';
+      }
+    }
+  </script>
+</body>
+</html>
