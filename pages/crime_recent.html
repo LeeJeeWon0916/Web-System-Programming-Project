@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "genre.css">
+        <link rel = "stylesheet" href = "imagepos.css">
+        <link rel = "stylesheet" href = "animename.css">
+        <script src= "genre_switch.js"></script>
+        <style>
+            footer{
+                position: absolute;
+                left: 400px;
+                top: 1320px;
+                color:white;
+                width:100%;
+                padding:10px;
+                font-size:27px;}
+                @font-face{font-family:'pretty';
+                src: url('../assets/강원교육현옥샘.ttf') format('truetype');}
+                *{font-family:'pretty';
+                font-size:23px;}
+            #anime1{left: 150px;}
+            #anime2{left: 480px;}
+            #anime3{left: 830px;}
+            #anime4{left: 1140px;}
+            #anime5{left: 50px;}
+            #anime6{left: 450px;}
+            #anime7{left: 805px;}
+            #anime8{left: 1180px;}
+        </style>
+    </head>
+
+    <body>
+ <header>
+    <ul class="bar">
+        <a href="main.html"><li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li></a>
+        <a href="romance.html"><li>로맨스</li></a>
+        <a href="fantasy.html"><li>판타지</li></a>
+        <a href="crime.html"><li>범죄</li></a>
+        <a href="sports.html"><li>스포츠</li></a>
+    </ul>
+        </header>
+
+        <nav id="nav">
+            <h1>범죄</h1>
+            <button onclick = "menu_switch()">정렬 ></button>
+    
+            <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
+                <tr> <td><a href="crime.html">인기순</a></td> </tr>
+                <tr> <td><a href="crime_star.html">별점순</a></td> </tr>
+                <tr> <td><a href="crime_recent.html">최신순</a></td> </tr>
+        </nav>
+
+        <section id="sec"></section>
+            <a href="introduce/action/이드인베이디드.html"><img id="img1" src = "../assets/crime/이드인베이디드.jpeg" alt = "7"></a>
+            <p id="anime1">ID:INVADED</p>
+            <a href="introduce/action/아인.html"><img id="img2" src = "../assets/crime/아인.jpeg" alt = "5"></a>
+            <p id="anime2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아인</p>
+            <a href="introduce/action/91데이즈.html"><img id="img3" src = "../assets/crime/91데이즈.jpeg" alt = "8"></a>
+            <p id="anime3">&nbsp;91 DAYS</p>
+            <a href="introduce/action/나만이없는거리.html"><img id="img4" src = "../assets/crime/나만이없는거리.png" alt = "1"></a>
+            <p id="anime4">&nbsp;&nbsp;나만이 없는 거리</p>
+            <br>
+            <a href="introduce/action/사쿠라코씨.html"><img id="img5" src = "../assets/crime/사쿠라코씨.jpeg" alt = "4"></a>
+            <p id="anime5">사쿠라코 씨의 발밑에는 시체가 묻혀 있다</p>
+            <a href="introduce/action/잔향의테러.html"><img id="img6" src = "../assets/crime/잔향의테러.png" alt = "6"></a>
+            <p id="anime6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;잔향의 테러</p>
+            <a href="introduce/action/다커댄블랙.html"><img id="img7" src = "../assets/crime/다커댄블랙.jpeg" alt = "2"></a>
+            <p id="anime7">Darker than Black</p>
+            <a href="introduce/action/데스노트.html"><img id="img8" src = "../assets/crime/데스노트.jpeg" alt = "3"></a>
+            <p id="anime8">&nbsp;데스노트</p>
+        </section>
+
+        <footer>
+            Copyright (c) 2023 Hanyang University. 정강이들 ALL RIGHTS RESERVED.<br><br>
+             
+        </footer>
+    </body>
+</html>
