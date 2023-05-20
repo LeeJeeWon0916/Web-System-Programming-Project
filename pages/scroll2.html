@@ -120,7 +120,7 @@
         <a href="introduce/sport/슬램덩크.html"><img class="image" src="../assets/main/슬램덩크.jpg"></a>
         <a href="introduce/main/이멋폭.html"><img class="image" src="../assets/main/이멋폭.png"></a>
         <a href="introduce/main/귀멸의칼날.html"><img class="image" src="../assets/main/귀멸의칼날도공마을.png"></a> 
-        <a href="introduce/main/최애의아이.html"><img class="image" src="../assets/main/최애의아이.png"></a>  
+          
         <!-- Add more images as needed -->
       </div>
     </div>
@@ -130,12 +130,20 @@
   
     <br>
     <div id="poptit"><p id = "text">신작 애니</p></div>
-    <div>
-        <a id="new1" href="최애의아이.html"><img src="../assets/main/최애의아이.png"  height="280px"></a>
-        <a id="new2" href="이멋폭.html"><img src="../assets/main/이멋폭.png" height="280px"></a>
+    <div id="image-container2">
+      <div id="scroll-container">
+        <a href="introduce/action/스즈메.html"><img class="image" src="../assets/main/스즈메.jpg"></a>
+        <a href="introduce/sport/슬램덩크.html"><img class="image" src="../assets/main/슬램덩크.jpg"></a>
+        <a href="introduce/main/이멋폭.html"><img class="image" src="../assets/main/이멋폭.png"></a>
+        <a href="introduce/main/귀멸의칼날.html"><img class="image" src="../assets/main/귀멸의칼날도공마을.png"></a> 
+          
+        <!-- Add more images as needed -->
+      </div>
     </div>
+    <button onclick="scrollToNextImage()">다음 이미지</button><br>
+    <button onclick="scrollToBeforeImage()">이전 이미지</button>
     
-      <script>
+    <script>
     var container = document.getElementById('image-container2');
     var scrollContainer = document.getElementById('scroll-container');
     var images = scrollContainer.getElementsByClassName('image');
