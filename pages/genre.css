@@ -26,9 +26,10 @@ button { background-color: rgb(3, 1, 39); border: none; color: white; margin-top
 section {clear: both; padding: 40px; text-align: center;}
 img {width: 300px; height: 450px; padding: 20px;}
 
-img:hover{border:1px solid white;
+img:hover{border:1px solid rgb(98, 98, 111);
     border-bottom:0
     }
 table {position: absolute; visibility: hidden; top: 132px; left: 270px;}
 
-            
+button:hover{font-weight:bold;}
+
