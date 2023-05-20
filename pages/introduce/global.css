@@ -18,18 +18,19 @@ li{display: inline; letter-spacing: 10px; font-size:22px; }
 a {text-decoration-line: none; color: white;}
 a:hover {font-weight: bold;} 
 
-
-
-.bar{
-    letter-spacing: 40px;
+.bar{letter-spacing: 40px;
     border-top : 1px solid white;
     border-bottom : 1px solid white;
     padding-top: 20px; padding-bottom: 20px;
-    color: white;
-}
-.bar li{display: inline; letter-spacing: 10px;}
-#big{font-size:30px;}
-.bar a{text-decoration: none; color: white;}
+    color: white;}
+#big{font-size:40px;}
+.bar li{display: inline;
+    letter-spacing: 10px;
+    font-size:25px;}
+.bar a {text-decoration-line: none; color: white;}
+a:hover {font-weight: bold;}
+
+
 #intro{
 position:absolute;
 top:250px;
@@ -85,3 +86,17 @@ ul.genre{letter-spacing:3px;
     padding:20px;
     padding-top:10px;}
 
+#ott{
+    position:absolute;
+    top: 100px;
+    left:-40px;
+    
+}
+footer{
+    position: absolute;
+    left: 400px;
+    top: 850px;
+    color:white;
+    width:100%;
+    padding:10px;
+    font-size:27px;}
