@@ -4,6 +4,7 @@
         <link rel = "stylesheet" href = "genre.css">
         <link rel = "stylesheet" href = "imagepos.css">
         <link rel = "stylesheet" href = "animename.css">
+        <script src= "genre_switch.js"></script>
         <style>
             #anime2{position: absolute;
                 left: 480px;
@@ -20,6 +21,11 @@
                 top: 1210px;
             color:white;
             font-size:25px;}
+            @font-face{font-family:'pretty';
+        src: url('../assets/강원교육현옥샘.ttf') format('truetype');}
+        *{font-family:'pretty';
+        font-size:23px;}
+
         </style>
     
         <script src= "genre_switch.js"></script>
@@ -44,13 +50,13 @@
                     <a href="action.html"><li>액션</li></a>
                     <a href="crime.html"><li>범죄</li></a>
                     <a href="sports.html"><li>스포츠</li></a>
-                    <a href="immun.html"><li>애니입문</li></a>
                 </ul>
             </header>
     
             <nav>
                 <h1>판타지</h1>
                 <button onclick = "menu_switch()">정렬 ></button>
+
     
                 <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
                     <tr> <td><a href="fantasy.html">인기순</a></td> </tr>
