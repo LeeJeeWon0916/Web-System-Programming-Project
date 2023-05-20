@@ -5,8 +5,6 @@
     <link rel = "stylesheet" href = "genre.css">
     <style>   
         html, body{width: 100%; height: 100%;}
-        
-            
         div{
             margin-left: auto;
             margin-right: auto;
@@ -26,6 +24,8 @@
             height: 45px;
             color: white;}
         #text {font-size: 30px;}
+        #text1 {font-size: 30px;}
+        #text2 {font-size: 30px;}
         #new1{display: inline;
             float:left;}
         #new2{display: inline; float: right;}
@@ -68,6 +68,9 @@
         src: url('../assets/강원교육현옥샘.ttf') format('truetype');}
         *{font-family:'pretty';
         font-size:23px;}
+
+        button {position:fixed; bottom: 30px; right: 30px; color: white; border: 1px solid white;}
+        button:hover {cursor: pointer;}
     </style>
 </head>
 
@@ -76,10 +79,59 @@
         <a href="main.html"><li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li></a>
         <a href="romance.html"><li>로맨스</li></a>
         <a href="fantasy.html"><li>판타지</li></a>
+        <a href="action.html"><li>액션</li></a>
         <a href="crime.html"><li>범죄</li></a>
         <a href="sports.html"><li>스포츠</li></a>
+        <a href="immun.html"><li>애니입문</li></a>
     </ul>
     <br>
+
+    <button id = "but" onclick = "dark_light()">라이트 & 다크!</button>
+
+    <script>
+        function dark_light() {
+            let mode = "dark";
+            let real = document.getElementsByTagName("body")[0].style.backgroundColor;
+            if (real == "white") {
+                mode = "white";
+            }
+  
+            if (mode == "dark") {
+                mode = "white";
+                document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+                document.getElementsByTagName("li")[0].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[1].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[2].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[3].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[4].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[5].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("ul")[0].style.borderTop = "1px solid rgb(3, 1, 39)";
+                document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid rgb(3, 1, 39)";
+                document.getElementById("text").style.color = "rgb(3, 1, 39)";
+                document.getElementById("text1").style.color = "rgb(3, 1, 39)";
+                document.getElementById("text2").style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("footer")[0].style.color = "rgb(3, 1, 39)";
+            }
+            else {
+                mode = "white";
+                document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[0].style.color = "white";
+                document.getElementsByTagName("li")[1].style.color = "white";
+                document.getElementsByTagName("li")[2].style.color = "white";
+                document.getElementsByTagName("li")[3].style.color = "white";
+                document.getElementsByTagName("li")[4].style.color = "white";
+                document.getElementsByTagName("li")[5].style.color = "white";
+                document.getElementsByTagName("ul")[0].style.borderTop = "1px solid white";
+                document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid white";
+                document.getElementById("text").style.color = "white";
+                document.getElementById("text1").style.color = "white";
+                document.getElementById("text2").style.color = "white";
+                document.getElementsByTagName("footer")[0].style.color = "white";
+            }
+        }
+    </script>
+
+
     <div id="poptit"><p id = "text">후끈후끈 인기작, 지금 당장 즐겨보세요!</p></div>
     <div class="slideshow-container">
         <div class="slide active">
@@ -93,14 +145,14 @@
         </div>
     </div>
     <br>
-    <div id="poptit"><p id = "text">요즘 유행하는 애니</p></div>
+    <div id="poptit"><p id = "text1">요즘 유행하는 애니</p></div>
     <div id="poppop">
         <a id="pop1" href="introduce/action/스즈메.html"><img src="../assets/main/스즈메.jpg" width="300px"; height="400px"></a>
         <a id="pop2" href="슬램덩크.html"><img src="../assets/main/슬램덩크.jpg" width="300px"; height="400px"></a>
         <a id="pop3" href="짱구.html"><img src="../assets/main/짱구.png" width="300px"; height="400px"></a>
     </div>
     <br>
-    <div id="poptit"><p id = "text">신작 애니</p></div>
+    <div id="poptit"><p id = "text2">신작 애니</p></div>
     <div>
         <a id="new1" href="최애의아이.html"><img src="../assets/main/최애의아이.png"  height="280px"></a>
         <a id="new2" href="이멋폭.html"><img src="../assets/main/이멋폭.png" height="280px"></a>
