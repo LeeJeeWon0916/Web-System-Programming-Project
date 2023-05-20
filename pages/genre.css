@@ -15,10 +15,9 @@ li.big{font-size:40px;}
 li{display: inline;
     letter-spacing: 10px;
     font-size:25px;}
-
-
 a {text-decoration-line: none; color: white;}
 a:hover {font-weight: bold;} 
+
 
 h1 {padding-left: 40px; font-size: 40px; font-weight: bold; color: white; padding-right: 40px; float: left;}
 button { background-color: rgb(3, 1, 39); border: none; color: white; margin-top: 40px; font-size: 30px;}
