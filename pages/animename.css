@@ -1,0 +1,62 @@
+/* 애니 이미지 밑에 제목 절대위치 코드 */            
+            #anime1{position: absolute;
+                left: 120px;
+                top: 700px;
+            color:white;
+            font-size:25px;}
+            #anime2{position: absolute;
+                left: 500px;
+                top: 700px;
+            color:white;
+            font-size:25px;}
+            #anime3{position: absolute;
+                left: 830px;
+                top: 700px;
+            color:white;
+            font-size:25px;}
+            #anime4{position: absolute;
+                left: 1150px;
+                top: 700px;
+            color:white;
+            font-size:25px;}
+            #anime5{position: absolute;
+                left: 120px;
+                top: 1210px;
+            color:white;
+            font-size:25px;}
+            #anime6{position: absolute;
+                left: 450px;
+                top: 1210px;
+            color:white;
+            font-size:25px;}
+            #anime7{position: absolute;
+                left: 850px;
+                top: 1210px;
+            color:white;
+            font-size:25px;}
+            #anime8{position: absolute;
+                left: 1170px;
+                top: 1210px;
+            color:white;
+            font-size:25px;}
+            #anime9{position: absolute;
+                left: 140px;
+                top: 1720px;
+            color:white;
+            font-size:25px;}
+            #anime10{position: absolute;
+                left: 500px;
+                top: 1720px;
+            color:white;
+            font-size:25px;}
+            #anime11{position: absolute;
+                left: 850px;
+                top: 1720px;
+            color:white;
+            font-size:25px;}
+            #anime12{position: absolute;
+                left: 1180px;
+                top: 1720px;
+            color:white;
+            font-size:25px;}
+            

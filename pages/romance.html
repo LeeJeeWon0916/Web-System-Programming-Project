@@ -3,53 +3,62 @@
     <head>
         <link rel = "stylesheet" href = "genre.css">
         <link rel = "stylesheet" href = "imagepos.css">
+        <link rel = "stylesheet" href = "animename.css">
         <script src= "genre_switch.js"></script>
     </head>
     <body>
         <body>
             <header>
-                <ul class="bar"> 
-                    <li class="big">정강이들</li>
-                    <a href="main.html"><li>홈</li></a> 
-                    <a href="new.html"><li>신작</li></a> 
-                    <a href="popu.html"><li>인기</li></a>
+                <ul class="bar">
+                    <a href="main.html"><li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li></a>
                     <a href="romance.html"><li>로맨스</li></a>
-                    <a href="action.html"><li>액션</li></a>
                     <a href="fantasy.html"><li>판타지</li></a>
+                    <a href="action.html"><li>액션</li></a>
+                    <a href="crime.html"><li>범죄</li></a>
+                    <a href="sports.html"><li>스포츠</li></a>
                     <a href="immun.html"><li>애니입문</li></a>
                 </ul>
             </header>
     
             <nav>
                 <h1>로맨스</h1>
-                <button onclick = "menu_switch()">장르 ></button>
+                <button onclick = "menu_switch()">정렬 ></button>
     
                 <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
-                    <tr> <td><a href="new.html">신작</a></td> </tr>
-                    <tr> <td><a href="popu.html">인기</a></td> </tr>
-                    <tr> <td><a href="romance.html">로맨스</a></td> </tr>
-                    <tr> <td><a href="action.html">액션</a></td> </tr>
-                    <tr> <td><a href="fantasy.html">판타지</a></td> </tr>
-                    <tr> <td><a href="immun.html">애니 입문</a></td> </tr>
+                    <tr> <td><a href="romance.html">인기순</a></td> </tr>
+                    <tr> <td><a href="romance_star.html">별점순</a></td> </tr>
+                    <tr> <td><a href="romance_recent.html">최신순</a></td> </tr>
                 </table>
     
             </nav>
     
             <section> 
                 <a href="introduce/romance/4월은너의거짓말.html"><img id="img1" src = "../assets/romance/4월은너의거짓말.png" alt = "1"></a>
+                <p id="anime1">4월은 너의 거짓말</p>
                 <a href="introduce/romance/내이야기.html"><img id="img2" src = "../assets/romance/내이야기.png" alt = "2"></a>
+                <p id="anime2">내 이야기</p>
                 <a href="introduce/romance/너에게닿기를.html"><img id="img3" src = "../assets/romance/너에게닿기를.png" alt = "3"></a>
+                <p id="anime3">너에게 닿기를</p>
                 <a href="introduce/romance/늑대소녀.html"><img id="img4" src = "../assets/romance/늑대소녀.png" alt = "4"></a>
+                <p id="anime4">늑대소녀와 흑왕자</p>
                 <br>
                 <a href="introduce/romance/바이올렛에버가든.html"><img id="img5" src = "../assets/romance/바이올렛에버가든.png" alt = "5"></a>
+                <p id="anime5">극장판 바이올렛에버가든</p>
                 <a href="introduce/romance/비스크돌.html"><img id="img6" src = "../assets/romance/비스크돌.png" alt = "6"></a>
+                <p id="anime6">그 비스크돌은 사랑을 한다</p>
                 <a href="introduce/romance/비스타즈.html"><img id="img7" src = "../assets/romance/비스타즈.png" alt = "7"></a>
+                <p id="anime7">비스타즈</p>
                 <a href="introduce/romance/스킵과로퍼.html"><img id="img8" src = "../assets/romance/스킵과 로퍼.png" alt = "8"></a>
+                <p id="anime8">스킵과 로퍼</p>
                 <br>
                 <a href="introduce/romance/오늘부터신령님.html"><img id="img9" src = "../assets/romance/오늘부터신령님.png" alt = "9"></a>
+                <p id="anime9">오늘부터 신령님</p>
                 <a href="introduce/romance/호리미야.html"><img id="img10" src = "../assets/romance/호리미야.png" alt = "10"></a>
+                <p id="anime10">호리미야</p>
                 <a href="introduce/romance/게이머즈.html"><img id="img11" src = "../assets/romance/게이머즈.png" alt = "11"></a>
+                <p id="anime11">게이머즈!</p>
                 <a href="introduce/romance/스파이패밀리.html"><img id="img12" src = "../assets/romance/스파이패밀리.png" alt = "12"></a>
+                <p id="anime12">스파이패밀리</p>
 
             </section>
     
