@@ -87,16 +87,16 @@
       height: 400px;
       margin-right: 10px;
     }
-    #next{
-        position:relative;
-        top:20px;
-        left:1500px;
-    }
+
     #before{
         position:relative;
         top:0px;
         left:20px;
     }
+    .image-button img{width:30px;
+    height:30px;
+    object-fit:cover;
+ }
     </style>
 </head>
 
@@ -168,10 +168,10 @@
     <div id="poptit"><p id = "text">후끈후끈 인기작, 지금 당장 즐겨보세요!</p></div>
     <div class="slideshow-container">
         <div class="slide active">
-           <a href="introduce/귀멸의칼날.html"><img id="slideimage" src="../assets/main/귀칼납작.png" width="1000px"; height="600px" alt="Image 1"></a>
+           <a href="introduce/귀멸의칼날.html"><img id="slideimage" src="../assets/main/귀칼납작.png" width="1000px" height="600px" alt="Image 1"></a>
         </div>
         <div class="slide">
-           <a href="introduce/이세계삼촌.html"><img id="slideimage" src="../assets/main/이세계삼촌납작.png" width="1000px"; height="600px" alt="Image 2"></a>
+           <a href="introduce/이세계삼촌.html"><img id="slideimage" src="../assets/main/이세계삼촌납작.png" width="1000px" height="600px" alt="Image 2"></a>
         </div>
         <div class="slide">
            <a href="introduce/최애의아이.html"><img id="slideimage" src="../assets/main/최애의아이납작.png" width="1000px"; height="600px" alt="Image 3"></a>
@@ -181,7 +181,7 @@
     <div id="poptit"><p id = "text1">요즘 유행하는 애니</p></div>
     <div id="image-container2">
         <div id="scroll-container">
-          <a href="introduce/action/스즈메.html"><img class="image" src="../assets/main/스즈메.jpg"></a>
+          <a href="introduce/main/스즈메.html"><img class="image" src="../assets/main/스즈메.jpg"></a>
           <a href="introduce/sport/슬램덩크.html"><img class="image" src="../assets/main/슬램덩크.jpg"></a>
           <a href="introduce/main/이멋폭.html"><img class="image" src="../assets/main/이멋폭.png"></a>
           <a href="introduce/main/귀멸의칼날.html"><img class="image" src="../assets/main/귀멸의칼날도공마을.png"></a> 
@@ -190,7 +190,7 @@
         </div>
       </div>
     
-      <button id="next" onclick="scrollToNextImage()">다음 이미지</button><br>
+      <button class="image-button" onclick="scrollToNextImage()"><img src="../assets/arrow1.png"></button><br>
       <button id="before" onclick="scrollToBeforeImage()">이전 이미지</button>
 
     <br>
