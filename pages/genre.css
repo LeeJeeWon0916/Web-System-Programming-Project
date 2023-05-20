@@ -27,7 +27,8 @@ section {clear: both; padding: 40px; text-align: center;}
 img {width: 300px; height: 450px; padding: 20px;}
 
 img:hover{border:1px solid white;
-    border-bottom:0}
+    border-bottom:0
+    }
 table {position: absolute; visibility: hidden; top: 132px; left: 270px;}
 
             
