@@ -1,6 +1,6 @@
 /* 애니 이미지 밑에 제목 절대위치 코드 */            
             #anime1{position: absolute;
-                left: 140px;
+                left: 120px;
                 top: 800px;
             color:white;
             font-size:25px;}
