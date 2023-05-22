@@ -11,12 +11,17 @@
             width: 70%;
             height: 85%;}
         
-        #pop1{top:760px;
-            left:120px;}
-        #pop2{top:760px;
-            left:400px;}
-        #pop3{display: inline;
-            float: right;}
+        #pop1{position:absolute;
+            top:760px;
+            left:220px;}
+        #pop2{position:absolute;
+            top:760px;
+            left:580px;}
+        #pop3{position:absolute;
+            display: inline;
+            float: right;
+            top:760px;
+            left:940px;}
         #poptit{
             margin-left: auto;
             margin-right: auto;
@@ -26,10 +31,18 @@
         #text {font-size: 30px;}
         #text1 {font-size: 30px;}
         #text2 {font-size: 30px;}
-        #new1{display: inline;
-            float:left;}
-        #new2{display: inline; float: right;}
-        
+       
+        #new1{position:absolute;
+            top:1480px;
+            left:220px;}
+        #new2{position:absolute;
+            top:1480px;
+            left:580px;}
+        #new3{position:absolute;
+            display: inline;
+            float: right;
+            top:1480px;
+            left:940px;}
         .slideshow-container {
             width: 100%;
             height: 400px;
@@ -73,6 +86,7 @@
         button {position:fixed; bottom: 30px; right: 30px; color: white; border: 1px solid white;}
         button:hover {cursor: pointer;}
         /*버튼 css!!!!!*/
+
     </style>
 </head>
 
@@ -140,34 +154,40 @@
         }
     </script>
 
-
     <div id="poptit"><p id = "text">후끈후끈 인기작, 지금 당장 즐겨보세요!</p></div>
     <div class="slideshow-container">
         <div class="slide active">
-           <a href="introduce/귀멸의칼날.html"><img id="slideimage" src="../assets/main/귀칼납작.png" width="1000px"; height="600px" alt="Image 1"></a>
+           <a href="introduce/main/귀멸의칼날.html"><img id="slideimage" src="../assets/main/귀칼납작.png" width="1000px" height="600px" alt="Image 1"></a>
         </div>
         <div class="slide">
-           <a href="introduce/이세계삼촌.html"><img id="slideimage" src="../assets/main/이세계삼촌납작.png" width="1000px"; height="600px" alt="Image 2"></a>
+           <a href="introduce/이세계삼촌.html"><img id="slideimage" src="../assets/main/이세계삼촌납작.png" width="1000px" height="600px" alt="Image 2"></a>
         </div>
         <div class="slide">
-           <a href="introduce/최애의아이.html"><img id="slideimage" src="../assets/main/최애의아이납작.png" width="1000px"; height="600px" alt="Image 3"></a>
+           <a href="introduce/main/최애의아이.html"><img id="slideimage" src="../assets/main/최애의아이납작.png" width="1000px"; height="600px" alt="Image 3"></a>
         </div>
     </div>
     <br>
     <div id="poptit"><p id = "text1">요즘 유행하는 애니</p></div>
+
     <div id="poppop">
-        <a id="pop1" href="introduce/action/스즈메.html"><img src="../assets/main/스즈메.jpg" width="300px"; height="400px"></a>
-        <a id="pop2" href="슬램덩크.html"><img src="../assets/main/슬램덩크.jpg" width="300px"; height="400px"></a>
-        <a id="pop3" href="짱구.html"><img src="../assets/main/짱구.png" width="300px"; height="400px"></a>
-    </div>
+          <a id="pop1" href="../pages/introduce/main/스즈메.html"><img src="../assets/main/스즈메.jpg"  height="280"></a>
+          <a id="pop2" href="../pages/introduce/sport/슬램덩크.html"><img src="../assets/main/슬램덩크.jpg" height="280"></a>
+          <a id="pop3" href="../pages/introduce/main/짱구.html"><img src="../assets/main/짱구.png" height="280"></a>
+            
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+
     <br>
     <div id="poptit"><p id = "text2">신작 애니</p></div>
     <div>
-        <a id="new1" href="최애의아이.html"><img src="../assets/main/최애의아이.png"  height="280px"></a>
-        <a id="new2" href="이멋폭.html"><img src="../assets/main/이멋폭.png" height="280px"></a>
+        <a id="new1" href="../pages/introduce/main/최애의아이.html"><img src="../assets/main/최애의아이.png"  height="280px"></a>
+        <a id="new2" href="../pages/introduce/main/이멋폭.html"><img src="../assets/main/이멋폭.png" height="280px"></a>
+        <a id="new3" href="../pages/introduce/romance/스킵과로퍼.html"><img src="../assets/romance/스킵과 로퍼.png" height="280px"> </a>
     </div>
     
-      <script>
+<script>
+
         function startSlideshow() {
           const slides = document.querySelectorAll('.slide');
           let currentSlide = 0;
@@ -186,6 +206,7 @@
     
         startSlideshow();
       </script>
+      
 </body>
 <footer>
     Copyright (c) 2023 Hanyang University. 정강이들 ALL RIGHTS RESERVED.<br><br>
