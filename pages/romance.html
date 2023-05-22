@@ -20,10 +20,14 @@
             src: url('../assets/강원교육현옥샘.ttf') format('truetype');}
             *{font-family:'pretty';
             font-size:23px;}
+
+            #but {position:fixed; bottom: 30px; right: 30px; color: white; border: 1px solid white; z-index: 100;}
+            #but:hover {cursor: pointer;}
+
         </style>
     </head>
     <body>
-        <body>
+        
             <header>
                 <ul class="bar">
                     <a href="main.html"><li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li></a>
@@ -33,9 +37,11 @@
                     <a href="sports.html"><li>스포츠</li></a>
                 </ul>
             </header>
+
+            <button id = "but" onclick = "dark_light()">라이트&다크!</button>
     
             <nav>
-                <h1>로맨스</h1>
+                <h1 id ="h">로맨스</h1>
                 <button onclick = "menu_switch()">정렬 ></button>
     
                 <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
@@ -73,13 +79,60 @@
                 <p id="anime11">게이머즈!</p></a>
                 <a href="introduce/romance/스파이패밀리.html"><img id="img12" src = "../assets/romance/스파이패밀리.png" alt = "12">
                 <p id="anime12">스파이패밀리</p></a>
-
             </section>
-    
-        </body>
         <footer>
             Copyright (c) 2023 Hanyang University. 정강이들 ALL RIGHTS RESERVED.<br><br>
-             
         </footer>
-    </body>
+
+        <script>
+            function dark_light() {
+                let mode = "dark"; //mode에 dark값 부여. dark 값일 경우 light 모드로
+                let real = document.getElementsByTagName("body")[0].style.backgroundColor;
+                //문제는 light모드일때도 dark값을 부여함. body의 backgroundcolor를 real에 저장.
+                //background color가 white일 경ㅇ에는 if절에서 mode를 white로 값을 바꿈
+                if (real == "white") {
+                    mode = "white";
+                }
+
+                if (mode == "dark") { //dark모드 light 모드로
+                    document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+                    //body의 전체적인 background color 변경. 얘는 복붙하면 됨
+                    document.getElementsByTagName("li")[0].style.color = "rgb(3, 1, 39)";
+                    document.getElementsByTagName("li")[1].style.color = "rgb(3, 1, 39)";
+                    document.getElementsByTagName("li")[2].style.color = "rgb(3, 1, 39)";
+                    document.getElementsByTagName("li")[3].style.color = "rgb(3, 1, 39)";
+                    document.getElementsByTagName("li")[4].style.color = "rgb(3, 1, 39)";
+                    document.getElementsByTagName("li")[5].style.color = "rgb(3, 1, 39)";
+                    //li의 값인 정강이들, 로맨스, 판타지~ 배열값 이용해서 변경
+                    document.getElementsByTagName("h1").style.color = "rgb(3, 1, 39)";
+
+                    document.getElementsByTagName("ul")[0].style.borderTop = "1px solid rgb(3, 1, 39)";
+                    document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid rgb(3, 1, 39)";
+                    //경계선 바꿈. 대문자 쓰는게 중요!
+                    document.getElementById("text").style.color = "rgb(3, 1, 39)";
+                    document.getElementById("text1").style.color = "rgb(3, 1, 39)";
+                    document.getElementById("text2").style.color = "rgb(3, 1, 39)";
+                    //바꾸고 싶은 글자들에 전부 id값 지정해야함
+                    document.getElementsByTagName("footer")[0].style.color = "rgb(3, 1, 39)";
+                    //이건 다 똑같으니 복붙
+                }
+                else {
+                    mode = "white";
+                    document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(3, 1, 39)";
+                    document.getElementsByTagName("li")[0].style.color = "white";
+                    document.getElementsByTagName("li")[1].style.color = "white";
+                    document.getElementsByTagName("li")[2].style.color = "white";
+                    document.getElementsByTagName("li")[3].style.color = "white";
+                    document.getElementsByTagName("li")[4].style.color = "white";
+                    document.getElementsByTagName("li")[5].style.color = "white";
+                    document.getElementsByTagName("ul")[0].style.borderTop = "1px solid white";
+                    document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid white";
+                    document.getElementById("text").style.color = "white";
+                    document.getElementById("text1").style.color = "white";
+                    document.getElementById("text2").style.color = "white";
+                    document.getElementsByTagName("footer")[0].style.color = "white";
+                }
+            }
+        </script>
+    <body>
 </html>
