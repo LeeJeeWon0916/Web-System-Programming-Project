@@ -8,4 +8,4 @@ function menu_switch() {
     else {
         menu_table.style.visibility = 'hidden';
         }
-    }
+}

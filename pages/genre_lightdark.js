@@ -1,3 +1,5 @@
+//라이트 & 다크모드 버튼 
+
 function dark_light() {
     let mode = "dark"; //mode에 dark값 부여. dark 값일 경우 light 모드로
     let real = document.getElementsByTagName("body")[0].style.backgroundColor;
@@ -8,42 +10,55 @@ function dark_light() {
     }
 
     if (mode == "dark") { //dark모드 light 모드로
-        mode = "white";
         document.getElementsByTagName("body")[0].style.backgroundColor = "white";
         //body의 전체적인 background color 변경. 얘는 복붙하면 됨
-        document.getElementsByTagName("li")[0].style.color = "rgb(3, 1, 39)";
-        document.getElementsByTagName("li")[1].style.color = "rgb(3, 1, 39)";
-        document.getElementsByTagName("li")[2].style.color = "rgb(3, 1, 39)";
-        document.getElementsByTagName("li")[3].style.color = "rgb(3, 1, 39)";
-        document.getElementsByTagName("li")[4].style.color = "rgb(3, 1, 39)";
-        document.getElementsByTagName("li")[5].style.color = "rgb(3, 1, 39)";
-        //li의 값인 정강이들, 로맨스, 판타지~ 배열값 이용해서 변경
-        document.getElementsByTagName("h1")[0].style.color = "rgb(3, 1, 39)";
-
+        for(let i = 0; i <5; i ++) {
+            document.getElementsByTagName("li")[i].style.color = "rgb(3, 1, 39)";
+        } //li의 값인 정강이들, 로맨스, 판타지~ 배열값 이용해서 변경
         document.getElementsByTagName("ul")[0].style.borderTop = "1px solid rgb(3, 1, 39)";
         document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid rgb(3, 1, 39)";
-        //경계선 바꿈. 대문자 쓰는게 중요!
-        document.getElementById("text").style.color = "rgb(3, 1, 39)";
-        document.getElementById("text1").style.color = "rgb(3, 1, 39)";
-        document.getElementById("text2").style.color = "rgb(3, 1, 39)";
-        //바꾸고 싶은 글자들에 전부 id값 지정해야함
+        //ul의 경계선 변경
+        document.getElementsByTagName("h1")[0].style.color = "rgb(3, 1, 39)";
+        //h1 변경
+        let table = document.getElementsByTagName("table")[0];
+        let t = table.getElementsByTagName("*");
+        for(let i = 0; i <t.length; i ++) {
+            t[i].style.color = "rgb(3, 1, 39)";
+        } //정렬 클릭 시 나오는 텍스트 변경
+        document.getElementsByTagName("button")[0].style.backgroundColor = "white";
+        document.getElementsByTagName("button")[0].style.border = "1px solid rgb(3, 1, 39)";
+        document.getElementsByTagName("button")[0].style.color = "rgb(3, 1, 39)";
+        document.getElementsByTagName("button")[1].style.backgroundColor = "white";
+        document.getElementsByTagName("button")[1].style.border = "1px solid rgb(3, 1, 39)";
+        document.getElementsByTagName("button")[1].style.color = "rgb(3, 1, 39)"; //button 2개 변경
+        for(let i = 0; i <12; i ++) {
+            document.getElementsByTagName("p")[i].style.color = "rgb(3, 1, 39)";
+        } //애니 제목 변경
         document.getElementsByTagName("footer")[0].style.color = "rgb(3, 1, 39)";
-        //이건 다 똑같으니 복붙
+        //맨아래 저작권 변경
     }
     else {
-        mode = "white";
         document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(3, 1, 39)";
-        document.getElementsByTagName("li")[0].style.color = "white";
-        document.getElementsByTagName("li")[1].style.color = "white";
-        document.getElementsByTagName("li")[2].style.color = "white";
-        document.getElementsByTagName("li")[3].style.color = "white";
-        document.getElementsByTagName("li")[4].style.color = "white";
-        document.getElementsByTagName("li")[5].style.color = "white";
+        for(let i = 0; i <5; i ++) {
+            document.getElementsByTagName("li")[i].style.color = "white";
+        } //li의 값인 정강이들, 로맨스, 판타지~ 배열값 이용해서 변경
         document.getElementsByTagName("ul")[0].style.borderTop = "1px solid white";
         document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid white";
-        document.getElementById("text").style.color = "white";
-        document.getElementById("text1").style.color = "white";
-        document.getElementById("text2").style.color = "white";
+        document.getElementsByTagName("h1")[0].style.color = "white";
+        let table = document.getElementsByTagName("table")[0];
+        let t = table.getElementsByTagName("*");
+        for(let i = 0; i <t.length; i ++) {
+            t[i].style.color = "white";
+        }
+        document.getElementsByTagName("button")[0].style.backgroundColor = "rgb(3, 1, 39)";
+        document.getElementsByTagName("button")[0].style.border = "1px solid white";
+        document.getElementsByTagName("button")[0].style.color = "white";
+        document.getElementsByTagName("button")[1].style.backgroundColor = "rgb(3, 1, 39)";
+        document.getElementsByTagName("button")[1].style.border = "1px solid white";
+        document.getElementsByTagName("button")[1].style.color = "white"; 
+        for(let i = 0; i <12; i ++) {
+            document.getElementsByTagName("p")[i].style.color = "white";
+        } 
         document.getElementsByTagName("footer")[0].style.color = "white";
     }
 }

@@ -31,5 +31,6 @@ img:hover{border:1px solid rgb(98, 98, 111);
     }
 table {position: absolute; visibility: hidden; top: 132px; left: 270px;}
 
-button:hover{font-weight:bold;}
+button:hover{font-weight:bold; cursor: pointer;}
+#but {position:fixed; bottom: 30px; right: 30px; color: white; border: 1px solid white;}
 
