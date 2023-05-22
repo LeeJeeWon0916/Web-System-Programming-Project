@@ -6,6 +6,7 @@
         <link rel = "stylesheet" href = "imagepos.css">
         <link rel = "stylesheet" href = "animename.css">
         <script src= "genre_switch.js"></script>
+        <script src= "genre_lightdark_romance.js"></script>
         <style>
             footer{
                 position: absolute;
@@ -20,10 +21,11 @@
             src: url('../assets/강원교육현옥샘.ttf') format('truetype');}
             *{font-family:'pretty';
             font-size:23px;}
+            #but {position:fixed; bottom: 30px; right: 30px; color: white; border: 1px solid white;}
         </style>
     </head>
     <body>
-        <body>
+        
             <header>
                 <ul class="bar">
                     <a href="main.html"><li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li></a>
@@ -33,9 +35,11 @@
                     <a href="sports.html"><li>스포츠</li></a>
                 </ul>
             </header>
+
+            <button id = "but" onclick = "dark_light()">라이트&다크!</button>
     
             <nav>
-                <h1>로맨스</h1>
+                <h1 id ="h">로맨스</h1>
                 <button onclick = "menu_switch()">정렬 ></button>
     
                 <table id = "menu_table"> <!--절대 위치로 설정, 장르> click시 css와 자바스크립트로 hidden, display 되게 만듦-->
@@ -43,7 +47,6 @@
                     <tr> <td><a href="romance_star.html">별점순</a></td> </tr>
                     <tr> <td><a href="romance_recent.html">최신순</a></td> </tr>
                 </table>
-    
             </nav>
     
             <section> 
@@ -73,13 +76,9 @@
                 <p id="anime11">게이머즈!</p></a>
                 <a href="introduce/romance/스파이패밀리.html"><img id="img12" src = "../assets/romance/스파이패밀리.png" alt = "12">
                 <p id="anime12">스파이패밀리</p></a>
-
             </section>
-    
-        </body>
-        <footer>
-            Copyright (c) 2023 Hanyang University. 정강이들 ALL RIGHTS RESERVED.<br><br>
-             
-        </footer>
-    </body>
+            <footer>
+                Copyright (c) 2023 Hanyang University. 정강이들 ALL RIGHTS RESERVED.<br><br>
+            </footer>
+    <body>
 </html>

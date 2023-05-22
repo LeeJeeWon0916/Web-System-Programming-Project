@@ -106,63 +106,14 @@
         <a href="romance.html"><li>로맨스</li></a>
         <a href="fantasy.html"><li>판타지</li></a>
         <a href="crime.html"><li>범죄</li></a>
-        <a href="sports.html"><li>스포츠</li></a>
+        <a href="sports.html"><li>스포츠</li></a>   
     </ul>
     <br>
 
     <!--다크모드 버튼!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111-->
-    <button id = "but" onclick = "dark_light()">라이트 & 다크!</button>
+    <button id = "but" onclick = "dark_light()">라이트&다크!</button>
     <!--다크모드 버튼!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111-->
     <!--다크모드 자바스크립트!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <script>
-        function dark_light() {
-            let mode = "dark"; //mode에 dark값 부여. dark 값일 경우 light 모드로
-            let real = document.getElementsByTagName("body")[0].style.backgroundColor;
-            //문제는 light모드일때도 dark값을 부여함. body의 backgroundcolor를 real에 저장.
-            //background color가 white일 경ㅇ에는 if절에서 mode를 white로 값을 바꿈
-            if (real == "white") {
-                mode = "white";
-            }
-  
-            if (mode == "dark") { //dark모드 light 모드로
-                mode = "white";
-                document.getElementsByTagName("body")[0].style.backgroundColor = "white";
-                //body의 전체적인 background color 변경. 얘는 복붙하면 됨
-                document.getElementsByTagName("li")[0].style.color = "rgb(3, 1, 39)";
-                document.getElementsByTagName("li")[1].style.color = "rgb(3, 1, 39)";
-                document.getElementsByTagName("li")[2].style.color = "rgb(3, 1, 39)";
-                document.getElementsByTagName("li")[3].style.color = "rgb(3, 1, 39)";
-                document.getElementsByTagName("li")[4].style.color = "rgb(3, 1, 39)";
-                document.getElementsByTagName("li")[5].style.color = "rgb(3, 1, 39)";
-                //li의 값인 정강이들, 로맨스, 판타지~ 배열값 이용해서 변경
-                document.getElementsByTagName("ul")[0].style.borderTop = "1px solid rgb(3, 1, 39)";
-                document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid rgb(3, 1, 39)";
-                //경계선 바꿈. 대문자 쓰는게 중요!
-                document.getElementById("text").style.color = "rgb(3, 1, 39)";
-                document.getElementById("text1").style.color = "rgb(3, 1, 39)";
-                document.getElementById("text2").style.color = "rgb(3, 1, 39)";
-                //바꾸고 싶은 글자들에 전부 id값 지정해야함
-                document.getElementsByTagName("footer")[0].style.color = "rgb(3, 1, 39)";
-                //이건 다 똑같으니 복붙
-            }
-            else {
-                mode = "white";
-                document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(3, 1, 39)";
-                document.getElementsByTagName("li")[0].style.color = "white";
-                document.getElementsByTagName("li")[1].style.color = "white";
-                document.getElementsByTagName("li")[2].style.color = "white";
-                document.getElementsByTagName("li")[3].style.color = "white";
-                document.getElementsByTagName("li")[4].style.color = "white";
-                document.getElementsByTagName("li")[5].style.color = "white";
-                document.getElementsByTagName("ul")[0].style.borderTop = "1px solid white";
-                document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid white";
-                document.getElementById("text").style.color = "white";
-                document.getElementById("text1").style.color = "white";
-                document.getElementById("text2").style.color = "white";
-                document.getElementsByTagName("footer")[0].style.color = "white";
-            }
-        }
-    </script>
 
     <div id="poptit"><p id = "text">후끈후끈 인기작, 지금 당장 즐겨보세요!</p></div>
     <div class="slideshow-container">
@@ -196,8 +147,7 @@
         <a id="new3" href="../pages/introduce/romance/스킵과로퍼.html"><img src="../assets/romance/스킵과 로퍼.png" height="280px"> </a>
     </div>
     
-<script>
-
+    <script>
         function startSlideshow() {
           const slides = document.querySelectorAll('.slide');
           let currentSlide = 0;
@@ -213,13 +163,51 @@
             slides[currentSlide].classList.add('active');
           }, 3000); // 3초마다 슬라이드 전환
         }
-    
         startSlideshow();
-      </script>
+    </script>
       
+    <footer>
+        Copyright (c) 2023 Hanyang University. 정강이들 ALL RIGHTS RESERVED.<br><br>
+    </footer>
+
+    <script>
+        function dark_light() {
+            let mode = "dark"; 
+            let real = document.getElementsByTagName("body")[0].style.backgroundColor;
+            if (real == "white") {
+                mode = "white";
+            }
+
+            if (mode == "dark") { 
+                document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+                document.getElementsByTagName("li")[0].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[1].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[2].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[3].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[4].style.color = "rgb(3, 1, 39)";
+                document.getElementsByTagName("ul")[0].style.borderTop = "1px solid rgb(3, 1, 39)";
+                document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid rgb(3, 1, 39)"; 
+                document.getElementById('text').style.color = 'rgb(3, 1, 39)';
+                document.getElementById("text1").style.color = "rgb(3, 1, 39)";
+                document.getElementById("text2").style.color = "rgb(3, 1, 39)"; 
+                document.getElementsByTagName("footer")[0].style.color = "rgb(3, 1, 39)"; 
+            }
+            else {
+                document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(3, 1, 39)";
+                document.getElementsByTagName("li")[0].style.color = "white";
+                document.getElementsByTagName("li")[1].style.color = "white";
+                document.getElementsByTagName("li")[2].style.color = "white";
+                document.getElementsByTagName("li")[3].style.color = "white";
+                document.getElementsByTagName("li")[4].style.color = "white";
+                document.getElementsByTagName("ul")[0].style.borderTop = "1px solid white";
+                document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid white";
+                document.getElementById("text").style.color = "white";
+                document.getElementById("text1").style.color = "white";
+                document.getElementById("text2").style.color = "white";
+                document.getElementsByTagName("footer")[0].style.color = "white";
+            }
+        }
+    </script>
 </body>
-<footer>
-    Copyright (c) 2023 Hanyang University. 정강이들 ALL RIGHTS RESERVED.<br><br>
-     
-</footer>
+
 </html>
