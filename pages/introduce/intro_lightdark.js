@@ -21,23 +21,27 @@ function dark_light() {
         //ul의 경계선 변경
         document.getElementsByTagName("h1")[0].style.color = "rgb(3, 1, 39)";
         //h1 변경
+        document.getElementsByTagName("p")[0].style.color = "rgb(3, 1, 39)";
+        document.getElementById("info").style.color = "rgb(3, 1, 39)";
+        document.getElementById("content").style.color = "rgb(3, 1, 39)";
         let table = document.getElementsByTagName("table")[0];
         let t = table.getElementsByTagName("*");
         for(let i = 0; i <t.length; i ++) {
             t[i].style.color = "rgb(3, 1, 39)";
-        } //정렬 클릭 시 나오는 텍스트 변경
+        }
+        document.getElementsByTagName("ul")[1].style.color = "rgb(3, 1, 39)";
+        document.getElementsByTagName("ul")[1].style.borderTop = "1px solid rgb(3, 1, 39)";
+        document.getElementsByTagName("ul")[1].style.borderBottom = "1px solid rgb(3, 1, 39)";
         document.getElementsByTagName("button")[0].style.backgroundColor = "white";
         document.getElementsByTagName("button")[0].style.border = "1px solid rgb(3, 1, 39)";
         document.getElementsByTagName("button")[0].style.color = "rgb(3, 1, 39)";
-        document.getElementsByTagName("button")[1].style.backgroundColor = "white";
-        document.getElementsByTagName("button")[1].style.border = "1px solid rgb(3, 1, 39)";
-        document.getElementsByTagName("button")[1].style.color = "rgb(3, 1, 39)"; //button 2개 변경
-        for(let i = 0; i <8; i ++) {
-            document.getElementsByTagName("p")[i].style.color = "rgb(3, 1, 39)";
-        } //애니 제목 변경
+
         document.getElementsByTagName("footer")[0].style.color = "rgb(3, 1, 39)";
         //맨아래 저작권 변경
     }
+
+
+
     else {
         document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(3, 1, 39)";
         for(let i = 0; i <5; i ++) {
@@ -46,20 +50,21 @@ function dark_light() {
         document.getElementsByTagName("ul")[0].style.borderTop = "1px solid white";
         document.getElementsByTagName("ul")[0].style.borderBottom = "1px solid white";
         document.getElementsByTagName("h1")[0].style.color = "white";
+        document.getElementsByTagName("p")[0].style.color = "white";
+        document.getElementById("info").style.color = "white";
+        document.getElementById("content").style.color = "white";
         let table = document.getElementsByTagName("table")[0];
         let t = table.getElementsByTagName("*");
         for(let i = 0; i <t.length; i ++) {
             t[i].style.color = "white";
         }
+
+        document.getElementsByTagName("ul")[1].style.color = "white";
+        document.getElementsByTagName("ul")[1].style.borderTop = "1px solid white";
+        document.getElementsByTagName("ul")[1].style.borderBottom = "1px solid white";
         document.getElementsByTagName("button")[0].style.backgroundColor = "rgb(3, 1, 39)";
         document.getElementsByTagName("button")[0].style.border = "1px solid white";
         document.getElementsByTagName("button")[0].style.color = "white";
-        document.getElementsByTagName("button")[1].style.backgroundColor = "rgb(3, 1, 39)";
-        document.getElementsByTagName("button")[1].style.border = "1px solid white";
-        document.getElementsByTagName("button")[1].style.color = "white"; 
-        for(let i = 0; i <8; i ++) {
-            document.getElementsByTagName("p")[i].style.color = "white";
-        } 
         document.getElementsByTagName("footer")[0].style.color = "white";
     }
 }
