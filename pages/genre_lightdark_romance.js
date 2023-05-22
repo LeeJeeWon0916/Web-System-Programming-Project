@@ -1,5 +1,5 @@
 //라이트 & 다크모드 버튼 
-//작품 수 8개 기준(다르면 line 35, 60 작품 수에 맞춰서 수정)
+//작품 수가 12개라서 장르 중 혼자만 다른 js 할당
 
 function dark_light() {
     let mode = "dark"; //mode에 dark값 부여. dark 값일 경우 light 모드로
@@ -32,7 +32,7 @@ function dark_light() {
         document.getElementsByTagName("button")[1].style.backgroundColor = "white";
         document.getElementsByTagName("button")[1].style.border = "1px solid rgb(3, 1, 39)";
         document.getElementsByTagName("button")[1].style.color = "rgb(3, 1, 39)"; //button 2개 변경
-        for(let i = 0; i <8; i ++) {
+        for(let i = 0; i <12; i ++) {
             document.getElementsByTagName("p")[i].style.color = "rgb(3, 1, 39)";
         } //애니 제목 변경
         document.getElementsByTagName("footer")[0].style.color = "rgb(3, 1, 39)";
@@ -57,7 +57,7 @@ function dark_light() {
         document.getElementsByTagName("button")[1].style.backgroundColor = "rgb(3, 1, 39)";
         document.getElementsByTagName("button")[1].style.border = "1px solid white";
         document.getElementsByTagName("button")[1].style.color = "white"; 
-        for(let i = 0; i <8; i ++) {
+        for(let i = 0; i <12; i ++) {
             document.getElementsByTagName("p")[i].style.color = "white";
         } 
         document.getElementsByTagName("footer")[0].style.color = "white";
