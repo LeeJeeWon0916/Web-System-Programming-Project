@@ -6,6 +6,7 @@
         <link rel = "stylesheet" href = "imagepos.css">
         <link rel ="stylesheet" href="animename.css">
         <script src= "genre_switch.js"></script>
+        <script src= "genre_lightdark.js"></script>
         <style>
           #anime4{position: absolute;
                 left: 1080px;
@@ -14,9 +15,9 @@
             font-size:25px;}
         
             @font-face{font-family:'pretty';
-        src: url('../assets/강원교육현옥샘.ttf') format('truetype');}
-        *{font-family:'pretty';
-        font-size:23px;}
+            src: url('../assets/강원교육현옥샘.ttf') format('truetype');}
+            *{font-family:'pretty';
+            font-size:23px;}
             footer{
                 position: absolute;
                 left: 400px;
@@ -25,11 +26,13 @@
                 width:100%;
                 padding:10px;
                 font-size:27px;}
+            #but {position:fixed; bottom: 30px; right: 30px; color: white; border: 1px solid white;}
         </style>
 
     </head>
     <body>
         <body>
+            <button id = "but" onclick = "dark_light()">라이트&다크!</button>
             <header>
                 <ul class="bar">
                     <a href="main.html"><li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li></a>

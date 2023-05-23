@@ -6,6 +6,7 @@
         <link rel = "stylesheet" href = "imagepos.css">
         <link rel = "stylesheet" href = "animename.css">
         <script src= "genre_switch.js"></script>
+        <script src= "genre_lightdark_romance.js"></script>
         <style>
             #anime1{position: absolute;
                 left: 150px;
@@ -37,11 +38,14 @@
             color:white;
             width:100%;
             padding:10px;
-            font-size:27px;}
+            font-size:27px;
+        }
+        #but {position:fixed; bottom: 30px; right: 30px; color: white; border: 1px solid white;}
         </style>
     </head>
     <body>
         <body>
+            <button id = "but" onclick = "dark_light()">라이트&다크!</button>
             <header>
                 <ul class="bar"> 
                     <a href="main.html"><li class="big">정강이들</li></a> 
