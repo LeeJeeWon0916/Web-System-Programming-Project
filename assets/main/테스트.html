@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <img id="image" src="../../../assets/main/일본국기.png" alt="no image">
+    <script>
+    var image = document.getElementById("image");
+    image.onclick = function() {
+      image.src = (image.src.endsWith("../../../assets/main/일본국기.png")) ? "../../../assets/main/시계.png" : "../../../assets/main/일본국기.png";
+    };
+    </script>
+</html>
