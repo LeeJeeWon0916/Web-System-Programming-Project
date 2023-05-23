@@ -3,9 +3,13 @@
 <head>
     <title>정강이들</title>
     <link rel = "stylesheet" href = "genre.css">
-    <link rel = "stylesheet" href = "navbar.css">
     <style>   
         html, body{width: 100%; height: 100%;}
+        header{position : absolute;}
+        #jeonggang{position: absolute; top:13px;}
+        #ro{position: absolute; left: 130px; top: 13px;}
+        #fan{position: absolute; left: 220px; top: 13px;}
+        #cri{position: absolute; left: 310px; top: 13px;}
         div{
             margin-left: auto;
             margin-right: auto;
@@ -31,11 +35,7 @@
             color: white;}
         #text {font-size: 30px;}
         #text1 {font-size: 30px;}
-        #text2 {font-size: 30px;
-        position:absolute;
-        top:1550px;
-        left:200px;
-        }
+        #text2 {font-size: 30px;}
        
         #new1{position:absolute;
             top:1680px;
@@ -100,14 +100,15 @@
 </head>
 
 <body>
-    <ul class="bar">
-        <a href="main.html"><li class="big">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></li></a>
-        <a href="romance.html"><li>로맨스</li></a>
-        <a href="fantasy.html"><li>판타지</li></a>
-        <a href="crime.html"><li>범죄</li></a>
-        <a href="sports.html"><li>스포츠</li></a>        
-    </ul>
-    <br>
+    <header> 
+        <hr>
+        <p id="jeonggang">&nbsp;&nbsp;&nbsp;&nbsp;<a href="main.html">정강이들<!--이 부분은 다른 것보다 글씨 크게 해주세요--></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p id="ro"><a href="romance.html">로맨스</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p id="fan"><a href="fantasy.html">판타지</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p id="cri"><a href="crime.html">범죄</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p id="spo"><a href="sports.html">스포츠</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <hr>
+    </header>
 
     <!--다크모드 버튼!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111-->
     <button id = "but" onclick = "dark_light()">라이트&다크!</button>

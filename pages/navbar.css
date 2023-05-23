@@ -1,0 +1,8 @@
+.bar {
+    position: relative;
+    white-space: nowrap;
+}
+
+.bar li {
+    display: inline-block;
+}
