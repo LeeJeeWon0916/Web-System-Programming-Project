@@ -5,7 +5,7 @@ function dark_light() {
     let mode = "dark"; //mode에 dark값 부여. dark 값일 경우 light 모드로
     let real = document.getElementsByTagName("body")[0].style.backgroundColor;
     //문제는 light모드일때도 dark값을 부여함. body의 backgroundcolor를 real에 저장.
-    //background color가 white일 경ㅇ에는 if절에서 mode를 white로 값을 바꿈
+    //background color가 white일 경우에는 if절에서 mode를 white로 값을 바꿈
     if (real == "white") {
         mode = "white";
     }
